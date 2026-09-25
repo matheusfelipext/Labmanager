@@ -1,0 +1,109 @@
+/* =====================================================
+   FORMS.CSS — estilo compartilhado dos formulários
+   de cadastro (laboratórios e equipamentos).
+   Importar depois de base.css.
+   ===================================================== */
+
+/* O seletor > é chamado de seletor de filho direto */
+main > p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+fieldset {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #4d535c;
+  padding: 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+/* Texto / número / data / seleção */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #c9c3d1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #2b2b33;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgb(217, 119, 87);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Radio / checkbox */
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+  accent-color: rgb(217, 119, 87);
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+}
+
+/* Botões */
+button {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.7rem 1.6rem;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 0.6rem;
+  margin-right: 0.6rem;
+  background-color: #e5e5e5;
+  color: #2b2b33;
+  transition: background-color 0.2s, transform 0.2s;
+  display: flex;
+}
+
+button[type="submit"],
+.salvar {
+  background-color: rgb(217, 119, 87);
+  color: #fff;
+}
+
+button[type="submit"]:hover,
+.salvar:hover {
+  background-color: rgb(27, 141, 2);
+  transform: translateY(-2px);
+}
+
+button[type="reset"],
+.reset {
+  background-color: #e5e5e5;
+  color: #2b2b33;
+}
+
+button[type="reset"]:hover,
+.reset:hover {
+  background-color: rgb(173, 39, 39);
+  color: #fff;
+  transform: translateY(-2px);
+}

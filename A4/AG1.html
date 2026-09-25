@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu primeiro Formulario HTML</title>
+    <style>
+      
+      body {
+        background: linear-gradient(
+          45deg,
+          rgb(235, 193, 185) 25%,
+          rgb(109, 130, 170)
+        );
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 40%;
+      }
+
+      button {
+        background-color: #fbfbfb;
+        border: none;
+        padding: 12px;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0202f27a;
+      }
+
+      button:active {
+        transform: scale(0.98);
+      }
+
+      h1{
+        text-align: center ;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Cadastro de alunos</h1>
+    <hr />
+
+    <form action="">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label for="nome">Nome:</label><br>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu Nome"
+            required
+            maxlength="100"
+          />
+        </p>
+
+        <p>
+          <label for="sobrenome">Sobrenome:</label><br>
+
+          <input
+            type="text"
+            id="Sobrenome"
+            name="sobrenome"
+            placeholder="Digite seu Sobrenome"
+            required
+            maxlength="100"
+          />
+        </p>
+
+        <p>
+          <label for="dataNascimento">Data de nascimento:</label><br>
+
+          <input type="date" id="dataNascimento" name="dataNascimento" />
+        </p>
+
+        <p>
+          <label for="email">E-mail:</label><br>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="E-mail@dominio.com"
+          />
+        </p>
+
+        <p>
+          <label for="senha">Senha:</label><br>
+
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            required
+            minlength="8"
+            placeholder="XXXXXXXX"
+          />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Acadêmicas</legend>
+        <p>
+          <label for="curso">Curso:</label><br>
+          
+          <select name="curso" id="curso">
+            <option value="">Selecione...</option>
+            <option>Engenharia de Produção</option>
+            <option>Ciência da Computação</option>
+            <option>Engenharia da Computação</option>
+            <option>Técnico em Análise e Desenvolvimento de Sistemas</option>
+          </select>
+        </p>
+
+        <br />
+        <p>
+          <label>Periódo:</label><br>
+          <input type="radio" name="periodo" id="manha" />
+          <label for="manha">Manhã</label><br>
+          <input type="radio" name="periodo" id="tarde" />
+          <label for="tarde">Tarde</label><br>
+          <input type="radio" name="periodo" id="noite" />
+          <label for="noite">Noite</label>
+        </p>
+
+        <br />
+        <p>
+          <label>Interesses:</label><br>
+          <input type="checkbox" id="html" />
+          <label for="html">HTML</label><br>
+          <input type="checkbox" id="css" />
+          <label for="css">Css</label><br>
+          <input type="checkbox" id="javascript" />
+          <label for="javascript">JavaScript</label><br>
+          <input type="checkbox" id="react" />
+          <label for="react">React</label>
+        </p>
+
+        <br />
+        <p>
+          <label for="observacaoes">Observações:</label>
+          <textarea
+            name="observacaoes"
+            id="observacaoes"
+            rows="6"
+            cols="50"
+            placeholder="Digite Aqui suas Observações"
+          ></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Enviar Cadastro</button>
+        <button type="reset">Limpar Formulário</button>
+      </p>
+    </form>
+  </body>
+</html>

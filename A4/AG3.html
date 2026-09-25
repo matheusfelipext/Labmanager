@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A4 - AG3 - Formulários e tabelas</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exemplos de Tabelas HTML</h1>
+    </header>
+
+    <p>
+      Este arquivo apresenta vários modelos de tabelas usando apenas HTML, sem
+      CSS e JS
+    </p>
+    <hr />
+    <h2>1. Tabela simple</h2>
+
+    <table border="1">
+      <tr>
+        <th>Nome</th>
+        <th>Curso</th>
+        <th>Período</th>
+      </tr>
+
+      <tr>
+        <td>Matheus</td>
+        <td>Análise e desenvolvimento de sistemas</td>
+        <td>Noturno</td>
+      </tr>
+
+      <tr>
+        <td>Miguel</td>
+        <td>Eng da computação</td>
+        <td>Noturno</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h2>2. Tabela com thead, tbody e tfoot</h2>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mouse</td>
+          <td>2</td>
+          <td>R$ 50,00</td>
+        </tr>
+        <tr>
+          <td>teclado</td>
+          <td>1</td>
+          <td>R$ 125,00</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>3</td>
+          <td>R$ 275,00</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Carka</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Diego</td>
+          <td>7</td>
+          <td>8,5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Média Geral da turma: 8,1</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <h2>3. Tabela com colspan</h2>
+    <table border="1">
+      <tr>
+        <th>Nome</th>
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+      </tr>
+      <tr>
+        <td>Carla</td>
+        <td>8,0</td>
+        <td>9,0</td>
+      </tr>
+      <tr>
+        <td>Diego</td>
+        <td>7,0</td>
+        <td>8,5</td>
+      </tr>
+      <tr>
+        <td colspan="3">Média geral da turma 8,1</td>
+      </tr>
+    </table>
+    <hr />
+    <h2>4. Tabela com rowspan</h2>
+    <table border="1">
+      <tr>
+        <th>Bloco</th>
+        <th>Laboratório</th>
+        <th>Sala</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Bloco A</td>
+        <td>Laboratório de Redes</td>
+        <td>101</td>
+      </tr>
+      <tr>
+        <td>Laboratório de Software</td>
+        <td>102</td>
+      </tr>
+      <tr>
+        <td>Bloco B</td>
+        <td>Laboratório de Hardware</td>
+        <td>205</td>
+      </tr>
+    </table>
+    <hr>
+    <h2>5. Tabela com Caption</h2>
+    <table border="1">
+        <caption>Lista de Equipamentos</caption>
+        <tr>
+            <th>Patrimônio</th>
+            <th>Equipamentos</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>PAT - 001</td>
+            <td>Computador Dell</td>
+            <td>Disponível</td>
+        </tr>
+        <tr>
+            <td>PAT - 002</td>
+            <td>Projetor Epson</td>
+            <td>Manutenção</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>6. Tabela com links</h2>
+    <table border="1">
+        <tr>
+            <th>Página</th>
+            <th>Descrição</th>
+            <th>Ação</th>
+        </tr>
+        <tr>
+            <td>Aula 1</td>
+            <td>Introdução ao Front-End</td>
+            <td><a href="#" target="_blank">Abrir</a></td>
+        </tr>
+        <tr>
+            <td>Aula 2</td>
+            <td>HTML Semântico</td>
+            <td><a href="#" target="_blank">Abrir</a></td>
+        </tr>
+        <tr>
+            <td>Aula 3</td>
+            <td>Links Imagens e Organização de Arquivos</td>
+            <td><a href="#" target="_blank">Abrir</a></td>
+        </tr>
+        <tr>
+            <td>Aula 4</td>
+            <td>Formulários e Tabelas</td>
+            <td><a href="#" target="_blank">Abrir</a></td>
+        </tr>
+    </table>
+  </body>
+</html>

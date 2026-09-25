@@ -1,0 +1,27 @@
+@import url("base.css");
+@import url("forms.css");
+
+/* ---------- Específico do cadastro de equipamentos ---------- */
+/* Bolinha colorida ao lado do status */
+#disponivel + label::before,
+#emUso + label::before,
+#manutencao + label::before,
+#descartado + label::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+#disponivel + label::before { background: #3d9a5c; }
+#emUso + label::before { background: #d97757; }
+#manutencao + label::before { background: #d9b23c; }
+#descartado + label::before { background: #a13f3f; }
+
+/* Cores nas opções de "cor de etiqueta" */
+option#verde { background-color: #3d9a5c; color: white; }
+option#amarela { background-color: #e0b42d; color: white; }
+option#vermelha { background-color: #d93c3c; color: white; }
+option#azul { background-color: #0066cc; color: white; }

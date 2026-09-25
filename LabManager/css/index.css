@@ -1,0 +1,14 @@
+@import url("base.css");
+
+/* ---------- Específico da página inicial ---------- */
+.funcionalidade {
+  color: #1f4e79;
+  font-weight: bold;
+  background-color: #e7f2fb;
+  border-left: 6px solid #1f4e79;
+}
+
+.texto-resumo {
+  color: #444;
+  font-style: italic;
+}

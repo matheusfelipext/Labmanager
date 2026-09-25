@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/laboratorios.css" />
+    <title>Laboratórios</title>
+  </head>
+  <body>
+    <header>
+      <img src="imagens/domingo_a_noite.jpg" alt="confia" width="20%" />
+      <figcaption>LabManager</figcaption>
+      <h1 id="titulo-principal">Laboratórios</h1>
+    </header>
+
+    
+
+    <main>
+      <section class="cabecalho-secao">
+        <h2>Lista de laboratórios Cadastrados</h2>
+        <p>Consulte abaixo os laboratórios cadastrados no sistema: </p>
+        <br>
+        <a href="cadastro-laboratorios.html" id="novoLab">Novo laboratório</a>
+        <table>
+          <caption>
+            Lista de Laboratórios
+          </caption>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Bloco</th>
+              <th>Sala</th>
+              <th>Capacidade</th>
+              <th>Tipo</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Laboratório de Redes</td>
+              <td>A</td>
+              <td>101</td>
+              <td>30</td>
+              <td>Redes</td>
+              <td class="status-ativo">Ativo</td>
+              <td>
+                <a href="cadastro-laboratorios.html" class="acao-editar">Editar</a>
+                <a href="#" class="acao-excluir">Excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Laboratório de Hardware</td>
+              <td>B</td>
+              <td>205</td>
+              <td>25</td>
+              <td>Hardware</td>
+              <td class="status-manutencao">Em manutenção</td>
+              <td>
+                <a href="cadastro-laboratorios.html" class="acao-editar">Editar</a>
+                <a href="#" class="acao-excluir">Excluir</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Laboratório de Software</td>
+              <td>A</td>
+              <td>102</td>
+              <td>40</td>
+              <td>Informática</td>
+              <td class="status-ativo">Ativo</td>
+              <td>
+                <a href="cadastro-laboratorios.html" class="acao-editar">Editar</a>
+                <a href="#" class="acao-excluir">Excluir</a>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7"><strong>Total de laboratórios cadastrados: 3</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section class="informacoes-importantes">
+        <h2>Informações importantes</h2>
+
+        <ol>
+          <li>Verificar disponibilidade</li>
+          <li>Conferir quantidade de equipamentos</li>
+          <li>Registrar manutenção quando necessário</li>
+          <li>Atualizar os dados periodicamente</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <small>LabManager - Página de Laboratório 💻</small>
+    </footer>
+  </body>
+</html>

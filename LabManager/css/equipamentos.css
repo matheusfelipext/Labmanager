@@ -1,0 +1,7 @@
+@import url("base.css");
+
+/* ---------- Específico da página de equipamentos ---------- */
+header p {
+  text-align: center;
+  margin-top: 0.4rem;
+}

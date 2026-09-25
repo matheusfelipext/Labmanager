@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Block x Inline</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 40px;
+      }
+
+      h1 {
+        color: #0f172a;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      div {
+        display: inline;
+      }
+
+      div:first-child {
+        display: none;
+      }
+
+      span {
+        display: inline-block;
+        width: 180px;
+      }
+
+      .caixa {
+        border: 2px solid #2563eb;
+        background-color: #dbeafe;
+        padding: 15px;
+        margin: 10px 5px;
+      }
+
+      .texto {
+        border: 2px solid #16a34a;
+        background-color: #dcfce7;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Elentos Blox x Inline</h1>
+    <hr />
+    <section>
+      <h2>Exemplo 1 - Elemntos Bloxk</h2>
+      <div>
+        <div class="caixa">Laboratório 01</div>
+        <div class="caixa">Laboratório 02</div>
+        <div class="caixa">Laboratório 03</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Exemplo 2 - Elementos inline</h2>
+      <span class="texto">Disponivel</span>
+      <span class="texto">Em Manutenção</span>
+      <span class="texto">Reservado</span>
+    </section>
+    
+  </body>
+</html>

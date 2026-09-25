@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demonstração Pseudoclasses</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root{
+        --c1: #0d47a1;
+        --c2: #1976d2;
+        --c3: #42a5f5;
+        --ok: #2e7d32;
+        --warn: #ef6c00;
+        --muted: red;
+        --border: #e5e7eb;
+        --bg: linear-gradient(45deg,
+    rgb(185, 200, 235) 25%,
+    rgb(148, 109, 170));
+        --white: #ffff;
+        --text: #111827;
+      }
+
+      html,body{
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        background-attachment: fixed;
+      }
+
+      .container{
+        max-width: 960px;
+        margin: 32px auto;
+        padding: 0 16px;
+      }
+
+      h1,h2{
+        margin: 0 0 12px;
+      }
+
+      section{
+        background: var(--white);
+        border: 1px solid var(--border);
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+      }
+
+      code,pre{
+        background: #0b1020;
+        color: #e5e7eb;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+
+      .hint{
+        color: var(--muted);
+        font-size: 0.95rem;
+        margin-top: 8px;
+      }
+
+      .btn{
+        display: inline-block;
+        padding: 12px 18px;
+        border-radius: 10px;
+        border: 2px solid var(--c2);
+        background: var(--c2);
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 0.8s ease, background .2s ease, border-color .2s ease;
+        user-select: none;
+      }
+
+      .btn:hover{
+        background: var(--c1);
+        border-color: var(--c1);
+      }
+
+      .btn:active{
+        transform: translateY(1px) scale(0.98);
+      }
+
+      .field{
+        display: block;
+        width: 100%;
+        max-width: 420px;
+        padding: 10px 12px;
+        margin: 8px 0 14px;
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        background: #fff;
+        outline: none;
+        transition: border-color .2s ease, box-shadow .2s ease;
+      }
+
+      .field:focus{
+        border-color: var(--c3);
+        box-shadow: 0 0 0 4px
+            rgba(66,165,245, .2);
+      }
+
+      .field:focus-visible{
+        border-color: var(--c1);
+        box-shadow: 0 0 0 4px rgba(13, 71, 161, .25);
+      }
+
+      .cards{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); 
+        list-style: none;
+        padding: 0;
+        margin: 12px 0 0 ;
+      }
+
+      .cards li{
+        border: 2px dashed var(--border);
+        border-radius: 12px;
+        background: #fff;
+        padding: 14px;
+        text-align: center;
+        font-weight: 600;
+        transition: background .2s ease, border-color .2s ease;
+      }
+
+      .cards li:first-child{
+        border-color: var(--ok);
+      }
+
+      .cards li:last-child{
+        border-color: var(--warn);
+      }
+
+      .cards li:nth-child(even){
+        background: #f1f5f9;
+      }
+
+      .cards li:nth-child(3){
+        outline: 3px solid #c084fc;
+      }
+
+      .links a{
+        display: inline-block;
+        margin: 6px 10px 0;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 6px 10px;
+        border-radius: 8px;
+        border: 2px solid transparent;
+        transition: color .15s ease, background .15s ease,
+         border-color .15s ease;
+      }
+
+      .links a:link{
+        color: var(--c1);
+      }
+
+      .links a:visited{
+        color: #6a1b9a;
+      }
+
+      .links a:hover{
+        background: #e3f2fd;
+        border-color: #bbdefb;
+      }
+
+      .links a:active{
+        background: #bbdefb;
+        border-color: var(--c3);
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header style="margin-bottom: 12px">
+        <h1>Pseudo-Classes CSS-Demonstração</h1>
+        <p class="hint">
+          Passe o mouse, clique, foque os campos e navegue nos links para ver os
+          estados mudarem.
+        </p>
+      </header>
+
+      <!-- 1) Interação com usuário -->
+      <section aria-labelledby="sec-interacao">
+        <h2 id="sec-interacao">
+          1) Interação: <code>:hover</code>,
+          <code>:active</code>,
+          <code>:focus</code>
+        </h2>
+        <div class="box">
+          <p>
+            <strong>Botão com</strong> <code>:hover</code> e
+            <code>:active</code>
+          </p>
+          <a href="#!" class="btn">Enviar</a>
+          <p class="hint">Passeo mouse (hover) e segure o clique (active)</p>
+        </div>
+        <div class="box">
+          <p><strong>Campos com </strong> <code>:focus</code> e validação</p>
+          <label for="nome">Nome (obrigatório)</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            class="field"
+            placeholder="Digite seu nome"
+            required
+          />
+          <label for="email">Email (padrão válido)</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="field"
+            placeholder="seu@email.com"
+            required
+          />
+          <p class="hint">
+            Use TAB para ver <code>:focul-visible</code>Deixe válido/ inválido
+            para ver bordas mudando.
+          </p>
+        </div>
+      </section>
+
+      <!-- 2) Estruturais -->
+       <section aria-labelledby="sec-estruturais">
+            <h2 id="sec-estruturais">2) Estruturais: <code>:first-child</code>, 
+            <code>:last-child</code>,
+            <code>:nth-child()</code>
+        </h2>
+        <ul class="cards" aria-label="Exemplo de lista">
+            <li>1º item (first-child)</li>
+            <li>2º item (even)</li>
+            <li>3º item (nth-child(3))</li>
+            <li>4º item (even)</li>
+            <li>5º</li>
+            <li>6º itema (last-child)</li>
+        </ul>
+        <p class="hint">O primeiro tem borda verde; o último, laranja;
+            pares com fundo cinza; o 3º com outline lilás
+        </p>
+       </section>
+
+       <!-- 3) Estados de link -->
+        <section aria-labelledby="sec-links">
+            <h2 id="sec-links">3) Links: <code>:link</code>,
+                <code>:visited</code>,
+                <code>:hover</code>,
+                <code>:active</code>
+            </h2>
+            <div class="links">
+                <a href="https://exemple.com" 
+                target="_blank" 
+                rel="noreferrer noopener">Exemple.com</a>
+
+            <a href="https://developer.mozilla.org/" 
+            target="_blank" 
+            rel="noreferrer noopener">NDM</a>
+
+            <a href="https://www.w3.org/TR/selectors-4/#pseudo-classes"
+                target="_blank"
+                rel="noreferrer noopener">Especificações</a>
+
+                <p class="hint">Clique em um link para marcá-lo como visitado;
+                    volte e veja a cor roxa (<code>:visited</code>)
+                </p>
+            </div>
+        </section>
+    </div>
+  </body>
+</html>

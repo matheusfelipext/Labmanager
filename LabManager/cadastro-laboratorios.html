@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cadastro-laboratorios.css" />
+    <title>Cadastro de Laboratórios</title>
+  </head>
+  <body>
+    <header>
+      <img src="imagens/domingo_a_noite.jpg" alt="confia" width="20%" />
+      <figcaption>LabManager</figcaption>
+      <h1>Cadastro de Laboratórios</h1>
+    </header>
+
+    <nav id="navegacao">
+      <h2>Navegação</h2>
+      <a href="index.html">Início</a>
+      <a href="login.html">Login</a>
+      <a href="laboratorios.html">Laboratórios</a>
+      <a href="equipamentos.html">Equipamentos</a>
+    </nav>
+    <main>
+      <p>Preencha os dados abaixo para cadastra um novo laboratório</p>
+      <form>
+        <fieldset>
+          <legend>Dados do Laboratório</legend>
+
+          <p>
+            <label for="nomeLaboratorio">Nome do Laboratório</label><br />
+            <input
+              type="text"
+              name="nomeLaboratorio"
+              id="nomeLaboratorio"
+              required
+              maxlength="80"
+              placeholder="Ex: Laboratório de Redes"
+            />
+          </p>
+
+           <p>
+            <label for="tipoLaboratorio">Tipo de Laboratório</label><br />
+            <select name="tipoLaboratorio" id="tipoLaboratorio" required>
+              <option value="">Selecione...</option>
+              <option value="infornatica">informática</option>
+              <option value="rede">Redes</option>
+              <option value="hardware">Hardware</option>
+              <option value="eletronica">Eletrônica</option>
+              <option value="multiuso">Multiuso</option>
+            </select>
+          </p>
+
+            <p>
+            <label for="bloco">Bloco</label><br />
+            <input
+              type="text"
+              name="bloco"
+              id="bloco"
+              required
+              maxlength="20"
+              placeholder="Ex: Bloco A"
+            />
+          </p>
+
+
+          <p>
+            <label for="sala">Sala</label><br />
+            <input
+              type="text"
+              name="sala"
+              id="sala"
+              required
+              maxlength="20"
+              placeholder="Ex: Bloco A"
+            />
+          </p>
+
+          <p>
+            <label for="capacidade">Capacidade</label><br />
+            <input
+              type="number"
+              name="capacidade"
+              id="capacidade"
+              required
+              min="1"
+              max="80"
+            />
+          </p>
+
+          <p>
+            <label>Status:</label><br />
+            <input
+              type="radio"
+              name="status"
+              id="ativo"
+              value="ativo"
+              checked
+            />
+            <label for="ativo">Ativo</label><br />
+
+            <input
+              type="radio"
+              name="status"
+              id="manutencao"
+              value="manutencao"
+            />
+            <label for="manutencao">Em Manutenção</label><br />
+
+            <input type="radio" name="status" id="inativo" value="inativo" />
+            <label for="inativo">Inativo</label>
+          </p>
+
+          <p>
+            <label>Recursos Disponíveis</label><br />
+            <input
+              type="checkbox"
+              name="recursos"
+              id="projetorVGA"
+              value="projetorVGA"
+            />
+            <label for="projetorVGA">Projetor (VGA)</label><br />
+            <input
+              type="checkbox"
+              name="recursos"
+              id="projetorHDMI"
+              value="projetorHDMI"
+            />
+            <label for="projetorHDMI">Projetor (HDMI)</label><br />
+            <input
+              type="checkbox"
+              name="recursos"
+              id="arCondicionado"
+              value="arCondicionado"
+            />
+            <label for="arCondicionado">Ar-condicionado</label><br />
+            <input
+              type="checkbox"
+              name="recursos"
+              id="internet"
+              value="internet"
+            />
+            <label for="internet">Internet</label><br />
+            <input
+              type="checkbox"
+              name="recursos"
+              id="quadroBranco"
+              value="quadroBranco"
+            />
+            <label for="quadroBranco">Quadro Branco</label><br />
+            <input
+              type="checkbox"
+              name="recursos"
+              id="quadroVerde"
+              value="quadroVerde"
+            />
+            <label for="quadroVerde">Quadro Verde</label><br />
+          </p>
+
+          <p>
+            <label for="observacoes">Observações:</label><br />
+            <textarea
+              name="observacao"
+              id="observacao"
+              placeholder="Digite Informações Adicionais sobre o Laboratório..."
+              rows="6"
+              cols="50"
+              maxlength="300"
+            ></textarea>
+          </p>
+        </fieldset>
+
+        <button type="submit">Salvar Laboratório</button><br />
+        <button type="reset">Limpar Formulário</button>
+      </form>
+    </main>
+
+    <footer>
+      <hr />
+      <small>LabManager - Página de Laboratório 💻</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>LabManager</title>
+  </head>
+  <body>
+
+    <header>
+      <img src="imagens/domingo_a_noite.jpg" alt="confia">
+      <figcaption>LabManager</figcaption>
+      <h1 id="titulo-principal">Principal</h1>
+      <p>Sistema para gerenciamento de laboratórios de informática</p>
+    </header>
+
+    <nav class="navegacao">
+      <h2>Navegação</h2>
+      <a href="index.html">Início</a>
+      <a href="login.html">Login</a>
+      <a href="laboratorios.html" >Laboratórios</a>
+      <a href="equipamentos.html" >Equipamentos</a>
+    </nav>
+
+    <main class="cards-container">
+      
+      <section class="card">
+        <h2>Funcionalidades do Sistema</h2>
+        <p class="funcionalidade">Cadastro de laboratórios</p>
+        <p class="funcionalidade">Controle de equipamentos</p>
+        <p class="funcionalidade">Registro de manutenção</p>
+        <p class="funcionalidade">Reserva de horário</p>
+      </section>
+
+      <section class="card">
+        <h2>Resumo do sistema</h2>
+        <p class="texto-resumo">
+          O LabManager ajuda instituições de ensino a controlar laboratórios,
+          equipamentos, reservas e manutenções de forma organizada
+        </p>
+        <p class="texto-resumo">
+          O objetivo é reduzir conflitos de horários, melhorar o controle dos
+          equipamentos e facilitar o acompanhamento das manutenções
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Laboratórios Cadastrados</h2>
+        <table>
+          <tr>
+            <th>Laboratório</th>
+            <th>Capacidade</th>
+            <th>Status</th>
+          </tr>
+
+          <tr>
+            <td>Lab 01</td>
+            <td>30 Alunos</td>
+            <td class="status-disponivel">Disponível</td>
+          </tr>
+
+          <tr>
+            <td>Lab 02</td>
+            <td>25 Alunos</td>
+            <td class="status-manutencao">Em manutenção</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <small>LabManager - Página de Laboratório 💻</small>
+    </footer>
+  </body>
+</html>

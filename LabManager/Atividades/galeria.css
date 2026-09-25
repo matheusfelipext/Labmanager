@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    rgb(235, 193, 185) 25%,
+    rgb(109, 130, 170)
+  );
+  background-attachment: fixed;
+  padding-top: 70px;
+}
+
+
+header p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+}
+
+.galeria figure img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.animal-detalhe {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #4d535c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-voltar:hover {
+  background-color: rgb(4, 0, 253);
+  transform: translateY(-2px);
+}
+
+.animal-imagem {
+  width: 100%;
+  max-width: 400px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.animal-info {
+  list-style: none;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+}
+
+.animal-info li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.animal-info li:last-child {
+  margin-bottom: 0;
+}

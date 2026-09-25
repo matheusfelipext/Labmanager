@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/AG3_estilo.css" />
+    <title>Classes</title>
+  </head>
+  <body>
+    <header id="cabecalho"><h1>LabManager</h1></header>
+    
+<main id="conteudo">    
+    <p>Sistema para gerenciamento de laboratórios</p>
+
+    <button>Entrar</button>
+</main>
+
+<footer id="rodape">Desenvolvimento Front-End - 2026</footer>
+
+  </body>
+</html>

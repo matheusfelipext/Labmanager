@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Herança em CSS</title>
+    <style>
+        .painel{
+            color: #1e3a8a;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
+
+            border: 3px solid #2489af;
+            padding: 25px;
+            margin-top: 30px;
+            background-color: #dbeafe;
+        }
+
+        .painel p{
+            color: #1580da;
+        }
+
+        .painel button{
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+        }
+    </style>
+    
+  </head>
+  <body>
+    <h1>Testando Herança no CSS</h1>
+
+    <p>Neste exemplo vamos observar quais propriedades passam do Elementos
+        pai para seus elemntos filhos
+    </p>
+
+    <section class="painel">
+        <h2>Laboratório de Informática</h2>
+        <p>
+            Este laboratório possui 30 computadores disponíveis para as aulas
+        </p>
+        <span>Status> Disponível</span>
+        <a href="#">Visualizar detalhes</a>
+        <button>Reservar laboratório</button>
+    </section>
+    
+  </body>
+</html>

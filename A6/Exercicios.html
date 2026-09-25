@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Block x Inline</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 40px;
+      }
+
+      h1 {
+        color: #0f172a;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      div {
+        display: inline;
+      }
+
+      .exercicio_4 > :nth-child(2) {
+        display: none;
+      }
+
+      span {
+        display: inline-block;
+        width: 180px;
+        text-align: center;
+      }
+
+      .menu li{
+        display: inline-block;
+        width: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercícios</h1>
+    <hr />
+    <section>
+      <h2>Exemplo 1 - Elemntos Bloxk</h2>
+      <div class="exercicio_4">
+        <div>Laboratório 01</div>
+        <div>Laboratório 02</div>
+        <div>Laboratório 03</div>
+      </div>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+
+  </body>
+</html>

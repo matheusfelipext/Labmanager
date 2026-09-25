@@ -1,0 +1,19 @@
+@import url("base.css");
+@import url("forms.css");
+
+/* ---------- Específico do cadastro de laboratórios ---------- */
+/* Bolinha colorida ao lado do status (Ativo / Manutenção / Inativo) */
+#ativo + label::before,
+#manutencao + label::before,
+#inativo + label::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+#ativo + label::before { background: #3d9a5c; }
+#manutencao + label::before { background: #d9b23c; }
+#inativo + label::before { background: #a13f3f; }

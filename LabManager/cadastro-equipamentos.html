@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cadastro-equipamentos.css" />
+    <title>Cadastro de Equipamentos</title>
+  </head>
+  <body>
+    <header>
+      <img src="imagens/domingo_a_noite.jpg" alt="confia" width="20%" />
+      <figcaption>LabManager</figcaption>
+      <h1>Cadastro de Equipamentos</h1>
+    </header>
+
+    <nav id="navegacao">
+      <h2>Navegação</h2>
+      <a href="index.html">Início</a>
+      <a href="login.html">Login</a>
+      <a href="laboratorios.html">Laboratórios</a>
+      <a href="equipamentos.html">Equipamentos</a>
+    </nav>
+    <hr />
+
+    <main>
+      <p>Preencha os dados abaixo para cadastrar um novo equipamento</p>
+      <form>
+        <fieldset>
+          <legend>Identificação do Equipamento</legend>
+
+          <p>
+            <label for="patrimonio">Número do Patrimônio</label><br />
+            <input
+              type="text"
+              name="patrimonio"
+              id="patrimonio"
+              required
+              maxlength="20"
+              placeholder="Ex: PAT-000123"
+            />
+          </p>
+
+          <p>
+            <label for="nomeEquipamento">Nome do Equipamento</label><br />
+            <input
+              type="text"
+              name="nomeEquipamento"
+              id="nomeEquipamento"
+              required
+              maxlength="80"
+              placeholder="Ex: Computador Dell OptiPlex"
+            />
+          </p>
+
+          <p>
+            <label for="tipoEquipamento">Tipo do Equipamento</label><br />
+            <select name="tipoEquipamento" id="tipoEquipamento" required>
+              <option value="">Selecione...</option>
+              <option value="computador">Computador</option>
+              <option value="notebook">Notebook</option>
+              <option value="monitor">Monitor</option>
+              <option value="roteador">Roteador</option>
+              <option value="projetor">Projetor</option>
+              <option value="impressora">Impressora</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Localização e Aquisição</legend>
+
+          <p>
+            <label for="laboratorio">Laboratório</label><br />
+            <select name="laboratorio" id="laboratorio" required>
+              <option value="">Selecione...</option>
+              <option value="redes">Laboratório de Redes</option>
+              <option value="hardware">Laboratório de Hardware</option>
+              <option value="software">Laboratório de Software</option>
+              <option value="multiuso">Laboratório Multiuso</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="dataAquisicao">Data de Aquisição</label><br />
+            <input
+              type="date"
+              name="dataAquisicao"
+              id="dataAquisicao"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="valorEstimado">Valor Estimado (R$)</label><br />
+            <input
+              type="number"
+              name="valorEstimado"
+              id="valorEstimado"
+              min="0"
+              step="0.01"
+              placeholder="Ex: 2500.00"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Status do Equipamento</legend>
+          <p>
+            <input
+              type="radio"
+              name="status"
+              id="disponivel"
+              value="disponivel"
+              checked
+            />
+            <label for="disponivel">Disponível</label><br />
+
+            <input type="radio" name="status" id="emUso" value="emUso" />
+            <label for="emUso">Em Uso</label><br />
+
+            <input
+              type="radio"
+              name="status"
+              id="manutencao"
+              value="manutencao"
+            />
+            <label for="manutencao">Em Manutenção</label><br />
+
+            <input
+              type="radio"
+              name="status"
+              id="descartado"
+              value="descartado"
+            />
+            <label for="descartado">Descartado</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Acessórios Incluídos</legend>
+          <p>
+            <input
+              type="checkbox"
+              name="acessorios"
+              id="teclado"
+              value="teclado"
+            />
+            <label for="teclado">Teclado</label><br />
+
+            <input type="checkbox" name="acessorios" id="mouse" value="mouse" />
+            <label for="mouse">Mouse</label><br />
+
+            <input
+              type="checkbox"
+              name="acessorios"
+              id="caboEnergia"
+              value="caboEnergia"
+            />
+            <label for="caboEnergia">Cabo de Energia</label><br />
+
+            <input
+              type="checkbox"
+              name="acessorios"
+              id="caboRede"
+              value="caboRede"
+            />
+            <label for="caboRede">Cabo de Rede</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Estado e Identificação</legend>
+
+          <p>
+            <label for="estadoConservacao">Estado de Conservação</label><br />
+            <select name="estadoConservacao" id="estadoConservacao" required>
+              <option value="">Selecione...</option>
+              <option value="novo">Novo</option>
+              <option value="otimo">Ótimo</option>
+              <option value="bom">Bom</option>
+              <option value="regular">Regular</option>
+              <option value="ruim">Ruim</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="corEtiqueta">Cor da Etiqueta</label><br />
+            <select name="corEtiqueta" id="corEtiqueta" required>
+              <option value="">Selecione...</option>
+              <option value="verde" id="verde">Verde</option>
+              <option value="amarela" id="amarela">Amarela</option>
+              <option value="vermelha" id="vermelha">Vermelha</option>
+              <option value="azul" id="azul">Azul</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="observacoes">Observações:</label><br />
+            <textarea
+              name="observacoes"
+              id="observacoes"
+              placeholder="Digite informações adicionais sobre o equipamento..."
+              rows="6"
+              cols="50"
+              maxlength="300"
+            ></textarea>
+          </p>
+        </fieldset>
+
+        <button type="button" class="salvar">Salvar Equipamento</button><br />
+        <button type="reset" class="reset">Limpar Formulário</button>
+      </form>
+    </main>
+
+    <footer>
+      <hr />
+      <small>LabManager - Página de Laboratório 💻</small>
+    </footer>
+  </body>
+</html>

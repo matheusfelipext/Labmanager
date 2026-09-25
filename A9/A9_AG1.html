@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Responsividade</title>
+    <style>
+
+        body{
+            margin: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .card{
+            background-color: red;
+            color: white;
+            padding: 50px;
+            font-size: 24px;
+            border-radius: 20px;
+        }
+
+        @media (max-width:768px){
+            
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media(max-width: 480px){
+            .container{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+  </head>
+  <body>
+
+    <h1>Minha Loja</h1>
+    <div class="container">
+        <div class="card">Notebook</div>
+        <div class="card">Tablet</div>
+        <div class="card">Smartphone</div>
+    </div>
+
+  </body>
+</html>

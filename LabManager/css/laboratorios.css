@@ -1,0 +1,45 @@
+@import url("base.css");
+
+/* ---------- Específico da página de laboratórios ---------- */
+.acao-editar {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 20px;
+  background-color: rgba(255, 179, 0, 0.619);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.acao-editar:hover {
+  background-color: rgb(163, 106, 1);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.acao-excluir {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 20px;
+  background-color: #b02a37;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.acao-excluir:hover {
+  background-color: rgb(141, 2, 2);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.informacoes-importantes {
+  background-color: #fff3cd;
+  color: #5f4700;
+  border: 2px solid #e0a800;
+}
+
+.informacoes-importantes li {
+  color: #5f4700;
+  font-weight: bold;
+}

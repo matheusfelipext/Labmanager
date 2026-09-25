@@ -1,0 +1,25 @@
+body{
+    background-image: linear-gradient(45deg,rgb(76, 166, 204),rgb(42, 42, 67) 64% );
+  background-attachment: fixed;
+    color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+}
+
+.titulo{
+    color: #1565c0;
+}
+
+.destaque{
+    color: red;
+    background-color: #ffebee;
+    padding: 15px;
+}
+
+.botao{
+    color: green;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 10px 23px;
+}

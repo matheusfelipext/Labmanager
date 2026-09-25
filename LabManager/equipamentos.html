@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/laboratorios.css" />
+    <title>Equipamentos</title>
+  </head>
+  <body>
+    <header>
+      <img src="imagens/domingo_a_noite.jpg" alt="confia" />
+      <figcaption>LabManager</figcaption>
+      <h1 id="titulo-principal">Equipamentos</h1>
+    </header>
+
+    <nav id="navegacao">
+      <h2>Navegação</h2>
+      <a href="index.html">Início</a>
+      <a href="login.html">Login</a>
+      <a href="laboratorios.html">Laboratórios</a>
+      <a href="equipamentos.html">Equipamentos</a>
+    </nav>
+
+    <main>
+      <section class="cabecalho-secao">
+        <h2>Equipamentos Cadastrados</h2>
+        <p>
+          Nesta página seram listados os computadores, projetores, roteadores,
+          impressoras e demais recursos disponíveis.
+        </p>
+        <br />
+        <a href="cadastro-equipamentos.html" id="novoEquipamento"
+          >Novo equipamento</a
+        >
+        <table>
+          <caption>
+            Lista de Equipamentos
+          </caption>
+
+          <thead>
+            <tr>
+              <th>Patrimônio</th>
+              <th>Equipamento</th>
+              <th>Tipo</th>
+              <th>Laboratório</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>PAT - 2026 - 001</td>
+              <td>Computador Dell Optlex</td>
+              <td>Computador</td>
+              <td>Laboratório de Software</td>
+              <td class="status-disponivel">Disponível</td>
+              <td>
+                <a href="cadastro-equipamentos.html" class="acao-editar"
+                  >Editar</a
+                >
+                <a href="#" class="acao-excluir">Excluir</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>PAT - 2026 - 002</td>
+              <td>Projetor Epson</td>
+              <td>Projetor</td>
+              <td>Laboratório de Redes</td>
+              <td class="status-em-uso">Uso</td>
+              <td>
+                <a href="cadastro-equipamentos.html" class="acao-editar"
+                  >Editar</a
+                >
+                <a href="#" class="acao-excluir">Excluir</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>PAT - 2026 - 003</td>
+              <td>Roteador Cisco</td>
+              <td>Roteador</td>
+              <td>Laboratório de Redes</td>
+              <td class="status-manutencao">Em manutenção</td>
+              <td>
+                <a href="cadastro-equipamentos.html" class="acao-editar"
+                  >Editar</a
+                >
+                <a href="#" class="acao-excluir">Excluir</a>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7">
+                <strong>Total de equipamentos cadastrados: 3</strong>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <h2>Próximas melhorias</h2>
+        <ol>
+          <li>Criar tabela de equipamentos</li>
+          <li>Adicionar formulário de cadastro</li>
+          <li>Permitir edição dos dados</li>
+          <li>Aplicar estilos com CSS</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <small>LabManager - Página de Laboratório 💻</small>
+    </footer>
+  </body>
+</html>
